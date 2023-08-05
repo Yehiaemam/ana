@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "enter permission file"
+
+read per
+
+chmod u+x ${per}
+
+echo "enter commit"
+
+read var
+
+git add .
+git commit -m "${var}"
+git push
